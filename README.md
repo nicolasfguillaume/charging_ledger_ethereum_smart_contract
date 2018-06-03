@@ -2,6 +2,10 @@
 
 Ethereum smart contract programmed with Solidity, for the AngelHack Paris Hackathon 2018
 
+Use case: more and more electric cars are being charged between 5-7pm, the peak of energy consumption. In order to incentivize car owners to be flexible with the charging hours, they can agree with the grid operator on a 'flexible charge' for a given time, outside of peak time, and receive a bonus in exchange (tokens) from the grid operator.
+
+In the following smart contract, it is possible to create new users and new charge agreements in the blockchain, and to retrieve these pieces of information from the blockchain as well.
+
 This contract can be tested here: https://remix.ethereum.org
 
 Additional resources I found useful:
