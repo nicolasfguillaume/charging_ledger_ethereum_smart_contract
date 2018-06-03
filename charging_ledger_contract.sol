@@ -10,8 +10,7 @@ contract charge_database {
        uint8 mode;
        uint256 bonus;
    }
-   
-   //mapping (address => User) Users;
+  
    address[] usersByAddress;
    
    mapping (bytes32 => Charge) Charges; 
@@ -34,17 +33,9 @@ contract charge_database {
 
     bytes32 chargeId = keccak256(user_id, charger_id, start);
     Charges[chargeId] = Charge(user_id, charger_id, start, duration, mode, bonus);
-    
-    //address thisNewAddress = msg.sender;
 
-      //Charges[thisNewAddress].user_id = user_id;
-      //Charges[thisNewAddress].charger_id = charger_id;
-      //Charges[thisNewAddress].start = start;
-      //Charges[thisNewAddress].duration = duration;
-      //Charges[thisNewAddress].mode = mode;
-      //Users[thisNewAddress].balance += bonus;
-      chargesList.push(chargeId);
-      return chargeId;
+    chargesList.push(chargeId);
+    return chargeId;
   }
 
   function getUsersList() public constant returns (address[]) { 
@@ -60,14 +51,12 @@ contract charge_database {
                                    uint32,
                                    uint32,
                                    uint8,
-                                  uint256
-                                   ) {
+                                   uint256) {
     return (Charges[chargeId].charger_id,
             Charges[chargeId].start,
             Charges[chargeId].duration,
             Charges[chargeId].mode,
-            Charges[chargeId].bonus
-            );
+            Charges[chargeId].bonus);
   }
 
 }
