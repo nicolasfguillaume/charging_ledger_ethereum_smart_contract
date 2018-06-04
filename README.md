@@ -1,6 +1,8 @@
 # Charging Ledger project - Ethereum smart contract
 
-Ethereum smart contract programmed with Solidity, for the AngelHack Paris Hackathon 2018
+Ethereum smart contract programmed with Solidity, for the AngelHack Paris Hackathon 2018. This project was awarded the AngelHack jury's prize.
+
+![winning team](https://github.com/nicolasfguillaume/charging_ledger_ethereum_smart_contract/blob/master/team-angelhack-prize.jpeg)
 
 Use case: more and more electric cars are being charged between 5-7pm, the peak of energy consumption. In order to incentivize car owners to be flexible with the charging hours, they can agree with the grid operator on a 'flexible charge' for a given time, outside of peak time, and receive a bonus in exchange (tokens) from the grid operator.
 
